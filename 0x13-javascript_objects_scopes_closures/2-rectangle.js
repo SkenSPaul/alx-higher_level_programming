@@ -1,2 +1,6 @@
 #!/usr/bin/node
-exports.converter = function (base) { return num => num.toString(base); };
+module.exports = class Rectangle {
+  constructor (w, h) {
+    if (w > 0 && h > 0) { [this.width, this.height] = [w, h]; }
+  }
+};
